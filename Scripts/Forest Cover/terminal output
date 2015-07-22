@@ -1,0 +1,513 @@
+ + global correct: 29.45652173913%
+0	
+<trainer> on training set:	
+<trainer> online epoch # 3 [batchSize = 1]	
+ [================================ 14200/14200 ===============================>] ETA: 0ms | Step: 0ms                              
+<trainer> time to learn 1 sample = 0.44597232845468ms	
+ConfusionMatrix:
+[[    1013     447       0       0      80       9     397]   52.055% 	[class: Spruce/Fir]
+ [     327    1080      11       0     477      80      64]   52.967% 	[class: Lodgepole Pine]
+ [       0       2    1023     348     132     514       0]   50.669% 	[class: Ponderosa Pine]
+ [       0       0     122    1935       0     103       0]   89.583% 	[class: Cottonwood/Willow]
+ [       1     279      27       0    1731      84       0]   81.574% 	[class: Aspen]
+ [       0      22     377     216     111    1319       0]   64.499% 	[class: Douglas-fir]
+ [     133       1       0       0       7       0    1728]]  92.456% 	[class: Krummholz]
+ + average row correct: 69.114748069218% 
+ + average rowUcol correct (VOC measure): 53.091615438461% 
+ + global correct: 69.218309859155%
+<trainer> saving network to /media/aviral/Tea Set/8th Semester/Major-Project/Forest Cover/save-log/model.net	
+<trainer> on testing Set:	
+ [================================ 921/921 ===================================>] ETA: 0ms | Step: 0ms                              
+<trainer> time to test 1 sample = 0.21157435563178ms	
+ConfusionMatrix:
+[[      47      27       5       1      58      28      48]   21.963% 	[class: Spruce/Fir]
+ [      20      19       5      12      18      23      24]   15.702% 	[class: Lodgepole Pine]
+ [       1       0      29      48       0      63       0]   20.567% 	[class: Ponderosa Pine]
+ [       0       0       0       0       0       0       0]   nan% 	[class: Cottonwood/Willow]
+ [       2       5       4       0      10      13       4]   26.316% 	[class: Aspen]
+ [       1       0      11      31       2      70       0]   60.870% 	[class: Douglas-fir]
+ [      75      38       0       0      51       8     119]]  40.893% 	[class: Krummholz]
+ + average row correct: 31.051882853111% 
+ + average rowUcol correct (VOC measure): 18.141098258396% 
+ + global correct: 31.95652173913%
+0	
+<trainer> on training set:	
+<trainer> online epoch # 4 [batchSize = 1]	
+ [================================ 14200/14200 ===============================>] ETA: 0ms | Step: 0ms                              
+<trainer> time to learn 1 sample = 0.44885759622278ms	
+ConfusionMatrix:
+[[    1116     429       2       0      64      10     325]   57.348% 	[class: Spruce/Fir]
+ [     355    1097      10       0     451      83      43]   53.801% 	[class: Lodgepole Pine]
+ [       0       1    1085     332     111     490       0]   53.739% 	[class: Ponderosa Pine]
+ [       0       0     129    1926       0     105       0]   89.167% 	[class: Cottonwood/Willow]
+ [       2     256      33       0    1747      84       0]   82.328% 	[class: Aspen]
+ [       0      13     410     197     102    1323       0]   64.694% 	[class: Douglas-fir]
+ [     133       1       0       0       7       0    1728]]  92.456% 	[class: Krummholz]
+ + average row correct: 70.504807574408% 
+ + average rowUcol correct (VOC measure): 54.932994501931% 
+ + global correct: 70.577464788732%
+<trainer> saving network to /media/aviral/Tea Set/8th Semester/Major-Project/Forest Cover/save-log/model.net	
+<trainer> on testing Set:	
+ [================================ 921/921 ===================================>] ETA: 0ms | Step: 0ms                              
+<trainer> time to test 1 sample = 0.25042467603984ms	
+ConfusionMatrix:
+[[      50      28       5       1      54      28      48]   23.364% 	[class: Spruce/Fir]
+ [      19      20       5      10      16      25      26]   16.529% 	[class: Lodgepole Pine]
+ [       1       0      34      40       0      66       0]   24.113% 	[class: Ponderosa Pine]
+ [       0       0       0       0       0       0       0]   nan% 	[class: Cottonwood/Willow]
+ [       2       5       4       0      10      13       4]   26.316% 	[class: Aspen]
+ [       1       0      12      28       2      72       0]   62.609% 	[class: Douglas-fir]
+ [      77      33       0       0      52      10     119]]  40.893% 	[class: Krummholz]
+ + average row correct: 32.304140428702% 
+ + average rowUcol correct (VOC measure): 18.902626633644% 
+ + global correct: 33.152173913043%
+0	
+<trainer> on training set:	
+<trainer> online epoch # 5 [batchSize = 1]	
+ [================================ 14200/14200 ===============================>] ETA: 0ms | Step: 0ms                              
+<trainer> time to learn 1 sample = 0.59447535326783ms	
+ConfusionMatrix:
+[[    1178     412       2       0      61      10     283]   60.534% 	[class: Spruce/Fir]
+ [     362    1105      12       0     444      82      34]   54.193% 	[class: Lodgepole Pine]
+ [       0       1    1129     315     101     473       0]   55.919% 	[class: Ponderosa Pine]
+ [       0       0     132    1925       0     103       0]   89.120% 	[class: Cottonwood/Willow]
+ [       2     251      36       0    1751      82       0]   82.516% 	[class: Aspen]
+ [       0      13     441     179      85    1327       0]   64.890% 	[class: Douglas-fir]
+ [     147       0       0       0       7       0    1715]]  91.760% 	[class: Krummholz]
+ + average row correct: 71.27622451101% 
+ + average rowUcol correct (VOC measure): 55.988273876054% 
+ + global correct: 71.338028169014%
+<trainer> saving network to /media/aviral/Tea Set/8th Semester/Major-Project/Forest Cover/save-log/model.net	
+<trainer> on testing Set:	
+ [================================ 921/921 ===================================>] ETA: 0ms | Step: 0ms                              
+<trainer> time to test 1 sample = 0.19782503316509ms	
+ConfusionMatrix:
+[[      51      31       5       1      51      29      46]   23.832% 	[class: Spruce/Fir]
+ [      21      20       6       8      14      27      25]   16.529% 	[class: Lodgepole Pine]
+ [       1       0      37      31       0      72       0]   26.241% 	[class: Ponderosa Pine]
+ [       0       0       0       0       0       0       0]   nan% 	[class: Cottonwood/Willow]
+ [       2       5       4       0       9      14       4]   23.684% 	[class: Aspen]
+ [       1       1      12      21       1      79       0]   68.696% 	[class: Douglas-fir]
+ [      78      36       0       0      49      10     118]]  40.550% 	[class: Krummholz]
+ + average row correct: 33.255254973968% 
+ + average rowUcol correct (VOC measure): 19.355370042225% 
+ + global correct: 34.130434782609%
+0	
+<trainer> on training set:	
+<trainer> online epoch # 6 [batchSize = 1]	
+ [================================ 14200/14200 ===============================>] ETA: 0ms | Step: 0ms                              
+<trainer> time to learn 1 sample = 0.4422171015135ms	
+ConfusionMatrix:
+[[    1219     403       2       0      60      10     252]   62.641% 	[class: Spruce/Fir]
+ [     361    1125      14       0     433      79      27]   55.174% 	[class: Lodgepole Pine]
+ [       0       0    1168     298      97     456       0]   57.850% 	[class: Ponderosa Pine]
+ [       0       0     127    1932       0     101       0]   89.444% 	[class: Cottonwood/Willow]
+ [       1     256      43       0    1746      76       0]   82.281% 	[class: Aspen]
+ [       0      12     463     163      72    1335       0]   65.281% 	[class: Douglas-fir]
+ [     160       0       0       0       7       0    1702]]  91.065% 	[class: Krummholz]
+ + average row correct: 71.962439162391% 
+ + average rowUcol correct (VOC measure): 56.919642005648% 
+ + global correct: 72.021126760563%
+<trainer> saving network to /media/aviral/Tea Set/8th Semester/Major-Project/Forest Cover/save-log/model.net	
+<trainer> on testing Set:	
+ [================================ 921/921 ===================================>] ETA: 0ms | Step: 0ms                              
+<trainer> time to test 1 sample = 0.22555277738457ms	
+ConfusionMatrix:
+[[      48      34       4       1      50      30      47]   22.430% 	[class: Spruce/Fir]
+ [      22      20       5       6      14      30      24]   16.529% 	[class: Lodgepole Pine]
+ [       1       0      41      22       0      77       0]   29.078% 	[class: Ponderosa Pine]
+ [       0       0       0       0       0       0       0]   nan% 	[class: Cottonwood/Willow]
+ [       3       4       3       0       9      15       4]   23.684% 	[class: Aspen]
+ [       1       1      15      16       1      81       0]   70.435% 	[class: Douglas-fir]
+ [      79      37       0       0      47      10     118]]  40.550% 	[class: Krummholz]
+ + average row correct: 33.784278233846% 
+ + average rowUcol correct (VOC measure): 19.506560328106% 
+ + global correct: 34.45652173913%
+0	
+<trainer> on training set:	
+<trainer> online epoch # 7 [batchSize = 1]	
+ [================================ 14200/14200 ===============================>] ETA: 0ms | Step: 0ms                              
+<trainer> time to learn 1 sample = 0.54471175435563ms	
+ConfusionMatrix:
+[[    1236     403       2       0      57      10     238]   63.515% 	[class: Spruce/Fir]
+ [     367    1129      15       0     425      77      26]   55.370% 	[class: Lodgepole Pine]
+ [       0       0    1211     288      92     428       0]   59.980% 	[class: Ponderosa Pine]
+ [       0       0     122    1939       0      99       0]   89.769% 	[class: Cottonwood/Willow]
+ [       1     250      46       0    1748      77       0]   82.375% 	[class: Aspen]
+ [       0      13     484     150      64    1334       0]   65.232% 	[class: Douglas-fir]
+ [     166       0       0       0       7       0    1696]]  90.744% 	[class: Krummholz]
+ + average row correct: 72.426426410675% 
+ + average rowUcol correct (VOC measure): 57.529355798449% 
+ + global correct: 72.485915492958%
+<trainer> saving network to /media/aviral/Tea Set/8th Semester/Major-Project/Forest Cover/save-log/model.net	
+<trainer> on testing Set:	
+ [================================ 921/921 ===================================>] ETA: 0ms | Step: 0ms                              
+<trainer> time to test 1 sample = 0.17317032581044ms	
+ConfusionMatrix:
+[[      48      35       4       1      48      31      47]   22.430% 	[class: Spruce/Fir]
+ [      22      20       5       6      15      29      24]   16.529% 	[class: Lodgepole Pine]
+ [       1       0      39      17       0      84       0]   27.660% 	[class: Ponderosa Pine]
+ [       0       0       0       0       0       0       0]   nan% 	[class: Cottonwood/Willow]
+ [       3       4       2       0       9      16       4]   23.684% 	[class: Aspen]
+ [       1       1      14       9       1      89       0]   77.391% 	[class: Douglas-fir]
+ [      76      40       0       0      46      10     119]]  40.893% 	[class: Krummholz]
+ + average row correct: 34.764565030734% 
+ + average rowUcol correct (VOC measure): 19.734832271934% 
+ + global correct: 35.217391304348%
+0	
+<trainer> on training set:	
+<trainer> online epoch # 8 [batchSize = 1]	
+ [================================ 14200/14200 ===============================>] ETA: 0ms | Step: 0ms                              
+<trainer> time to learn 1 sample = 0.41889667510986ms	
+ConfusionMatrix:
+[[    1250     395       2       0      62      10     227]   64.234% 	[class: Spruce/Fir]
+ [     365    1147      15       0     411      75      26]   56.253% 	[class: Lodgepole Pine]
+ [       0       1    1236     276      87     419       0]   61.218% 	[class: Ponderosa Pine]
+ [       0       0     119    1948       0      93       0]   90.185% 	[class: Cottonwood/Willow]
+ [       1     236      46       0    1757      82       0]   82.799% 	[class: Aspen]
+ [       0      13     512     133      61    1326       0]   64.841% 	[class: Douglas-fir]
+ [     173       0       0       0       7       0    1689]]  90.369% 	[class: Krummholz]
+ + average row correct: 72.842928341457% 
+ + average rowUcol correct (VOC measure): 58.083738173757% 
+ + global correct: 72.908450704225%
+<trainer> saving network to /media/aviral/Tea Set/8th Semester/Major-Project/Forest Cover/save-log/model.net	
+<trainer> on testing Set:	
+ [================================ 921/921 ===================================>] ETA: 0ms | Step: 0ms                              
+<trainer> time to test 1 sample = 0.18295454797734ms	
+ConfusionMatrix:
+[[      46      37       4       1      47      32      47]   21.495% 	[class: Spruce/Fir]
+ [      22      21       5       6      14      29      24]   17.355% 	[class: Lodgepole Pine]
+ [       1       0      39      13       0      88       0]   27.660% 	[class: Ponderosa Pine]
+ [       0       0       0       0       0       0       0]   nan% 	[class: Cottonwood/Willow]
+ [       3       4       2       0       9      16       4]   23.684% 	[class: Aspen]
+ [       1       1      13       3       1      96       0]   83.478% 	[class: Douglas-fir]
+ [      75      42       0       0      46      10     118]]  40.550% 	[class: Krummholz]
+ + average row correct: 35.703762372335% 
+ + average rowUcol correct (VOC measure): 19.990916363895% 
+ + global correct: 35.760869565217%
+0	
+<trainer> on training set:	
+<trainer> online epoch # 9 [batchSize = 1]	
+ [================================ 14200/14200 ===============================>] ETA: 0ms | Step: 0ms                              
+<trainer> time to learn 1 sample = 0.56183704188172ms	
+ConfusionMatrix:
+[[    1260     393       1       0      64      10     218]   64.748% 	[class: Spruce/Fir]
+ [     369    1146      18       0     409      72      25]   56.204% 	[class: Lodgepole Pine]
+ [       0       1    1260     270      84     404       0]   62.407% 	[class: Ponderosa Pine]
+ [       0       0     120    1950       0      90       0]   90.278% 	[class: Cottonwood/Willow]
+ [       1     225      47       0    1769      80       0]   83.365% 	[class: Aspen]
+ [       0      13     523     125      54    1330       0]   65.037% 	[class: Douglas-fir]
+ [     178       0       0       0       7       0    1684]]  90.102% 	[class: Krummholz]
+ + average row correct: 73.162887777601% 
+ + average rowUcol correct (VOC measure): 58.496152928897% 
+ + global correct: 73.232394366197%
+<trainer> saving network to /media/aviral/Tea Set/8th Semester/Major-Project/Forest Cover/save-log/model.net	
+<trainer> on testing Set:	
+ [================================ 921/921 ===================================>] ETA: 0ms | Step: 0ms                              
+<trainer> time to test 1 sample = 0.24916191183912ms	
+ConfusionMatrix:
+[[      45      38       3       1      47      33      47]   21.028% 	[class: Spruce/Fir]
+ [      20      23       5       6      13      30      24]   19.008% 	[class: Lodgepole Pine]
+ [       1       0      37      10       0      93       0]   26.241% 	[class: Ponderosa Pine]
+ [       0       0       0       0       0       0       0]   nan% 	[class: Cottonwood/Willow]
+ [       3       5       2       0       9      15       4]   23.684% 	[class: Aspen]
+ [       1       1      13       2       1      97       0]   84.348% 	[class: Douglas-fir]
+ [      76      44       0       0      45      10     116]]  39.863% 	[class: Krummholz]
+ + average row correct: 35.695336262385% 
+ + average rowUcol correct (VOC measure): 19.760955621799% 
+ + global correct: 35.54347826087%
+0	
+<trainer> on training set:	
+<trainer> online epoch # 10 [batchSize = 1]	
+ [================================ 14200/14200 ===============================>] ETA: 0ms | Step: 0ms                              
+<trainer> time to learn 1 sample = 0.53675564242081ms	
+ConfusionMatrix:
+[[    1269     388       1       0      68      11     209]   65.211% 	[class: Spruce/Fir]
+ [     368    1148      22       0     406      72      23]   56.302% 	[class: Lodgepole Pine]
+ [       0       1    1278     266      82     392       0]   63.299% 	[class: Ponderosa Pine]
+ [       0       0     114    1959       0      87       0]   90.694% 	[class: Cottonwood/Willow]
+ [       1     219      46       0    1777      79       0]   83.742% 	[class: Aspen]
+ [       0      13     530     121      51    1330       0]   65.037% 	[class: Douglas-fir]
+ [     182       0       0       0       7       0    1680]]  89.888% 	[class: Krummholz]
+ + average row correct: 73.453138555799% 
+ + average rowUcol correct (VOC measure): 58.871225799833% 
+ + global correct: 73.528169014085%
+<trainer> saving network to /media/aviral/Tea Set/8th Semester/Major-Project/Forest Cover/save-log/model.net	
+<trainer> on testing Set:	
+ [================================ 921/921 ===================================>] ETA: 0ms | Step: 0ms                              
+<trainer> time to test 1 sample = 0.23147467034389ms	
+ConfusionMatrix:
+[[      45      38       2       1      48      33      47]   21.028% 	[class: Spruce/Fir]
+ [      21      24       5       4      11      33      23]   19.835% 	[class: Lodgepole Pine]
+ [       1       0      35       8       0      97       0]   24.823% 	[class: Ponderosa Pine]
+ [       0       0       0       0       0       0       0]   nan% 	[class: Cottonwood/Willow]
+ [       3       5       1       0       8      17       4]   21.053% 	[class: Aspen]
+ [       1       1      11       2       1      99       0]   86.087% 	[class: Douglas-fir]
+ [      76      46       0       0      44      10     115]]  39.519% 	[class: Krummholz]
+ + average row correct: 35.390655944745% 
+ + average rowUcol correct (VOC measure): 19.514930372437% 
+ + global correct: 35.434782608696%
+0	
+<trainer> on training set:	
+<trainer> online epoch # 11 [batchSize = 1]	
+ [================================ 14200/14200 ===============================>] ETA: 0ms | Step: 0ms                              
+<trainer> time to learn 1 sample = 0.57403331071558ms	
+ConfusionMatrix:
+[[    1287     380       1       0      69      11     198]   66.136% 	[class: Spruce/Fir]
+ [     363    1154      23       0     403      73      23]   56.596% 	[class: Lodgepole Pine]
+ [       0       1    1294     260      81     383       0]   64.091% 	[class: Ponderosa Pine]
+ [       0       0     114    1968       0      78       0]   91.111% 	[class: Cottonwood/Willow]
+ [       1     208      49       1    1789      74       0]   84.307% 	[class: Aspen]
+ [       0      14     535     121      48    1327       0]   64.890% 	[class: Douglas-fir]
+ [     183       0       0       0       7       0    1679]]  89.834% 	[class: Krummholz]
+ + average row correct: 73.852235078812% 
+ + average rowUcol correct (VOC measure): 59.372907451221% 
+ + global correct: 73.929577464789%
+<trainer> saving network to /media/aviral/Tea Set/8th Semester/Major-Project/Forest Cover/save-log/model.net	
+<trainer> on testing Set:	
+ [================================ 921/921 ===================================>] ETA: 0ms | Step: 0ms                              
+<trainer> time to test 1 sample = 0.22586109066113ms	
+ConfusionMatrix:
+[[      47      38       1       0      48      35      45]   21.963% 	[class: Spruce/Fir]
+ [      22      23       5       4      11      33      23]   19.008% 	[class: Lodgepole Pine]
+ [       1       0      33       2       0     105       0]   23.404% 	[class: Ponderosa Pine]
+ [       0       0       0       0       0       0       0]   nan% 	[class: Cottonwood/Willow]
+ [       3       5       1       0       8      17       4]   21.053% 	[class: Aspen]
+ [       0       2      10       2       1     100       0]   86.957% 	[class: Douglas-fir]
+ [      79      45       1       0      43      10     113]]  38.832% 	[class: Krummholz]
+ + average row correct: 35.202650477489% 
+ + average rowUcol correct (VOC measure): 19.156333555778% 
+ + global correct: 35.217391304348%
+0	
+<trainer> on training set:	
+<trainer> online epoch # 12 [batchSize = 1]	
+ [================================ 14200/14200 ===============================>] ETA: 0ms | Step: 0ms                              
+<trainer> time to learn 1 sample = 0.44467647310714ms	
+ConfusionMatrix:
+[[    1289     380       1       0      71      11     194]   66.238% 	[class: Spruce/Fir]
+ [     363    1160      25       0     396      73      22]   56.891% 	[class: Lodgepole Pine]
+ [       0       2    1315     247      75     380       0]   65.131% 	[class: Ponderosa Pine]
+ [       0       0     107    1975       0      78       0]   91.435% 	[class: Cottonwood/Willow]
+ [       1     196      50       1    1802      72       0]   84.920% 	[class: Aspen]
+ [       0      13     540     120      45    1327       0]   64.890% 	[class: Douglas-fir]
+ [     182       0       0       0       7       0    1680]]  89.888% 	[class: Krummholz]
+ + average row correct: 74.199002129691% 
+ + average rowUcol correct (VOC measure): 59.820537481989% 
+ + global correct: 74.281690140845%
+<trainer> saving network to /media/aviral/Tea Set/8th Semester/Major-Project/Forest Cover/save-log/model.net	
+<trainer> on testing Set:	
+ [================================ 921/921 ===================================>] ETA: 0ms | Step: 0ms                              
+<trainer> time to test 1 sample = 0.26917276372092ms	
+ConfusionMatrix:
+[[      47      39       1       0      48      36      43]   21.963% 	[class: Spruce/Fir]
+ [      23      22       5       4      11      33      23]   18.182% 	[class: Lodgepole Pine]
+ [       1       0      28       1       0     111       0]   19.858% 	[class: Ponderosa Pine]
+ [       0       0       0       0       0       0       0]   nan% 	[class: Cottonwood/Willow]
+ [       4       5       1       0       8      17       3]   21.053% 	[class: Aspen]
+ [       0       2       8       1       1     103       0]   89.565% 	[class: Douglas-fir]
+ [      83      44       1       0      44      10     109]]  37.457% 	[class: Krummholz]
+ + average row correct: 34.679581224918% 
+ + average rowUcol correct (VOC measure): 18.43693840007% 
+ + global correct: 34.45652173913%
+0	
+<trainer> on training set:	
+<trainer> online epoch # 13 [batchSize = 1]	
+ [================================ 14200/14200 ===============================>] ETA: 0ms | Step: 0ms                              
+<trainer> time to learn 1 sample = 0.61689014166174ms	
+ConfusionMatrix:
+[[    1291     383       1       0      70      10     191]   66.341% 	[class: Spruce/Fir]
+ [     363    1160      26       0     396      72      22]   56.891% 	[class: Lodgepole Pine]
+ [       0       2    1321     242      74     380       0]   65.428% 	[class: Ponderosa Pine]
+ [       0       0     104    1984       0      72       0]   91.852% 	[class: Cottonwood/Willow]
+ [       1     193      50       0    1809      69       0]   85.250% 	[class: Aspen]
+ [       0      13     541     118      42    1331       0]   65.086% 	[class: Douglas-fir]
+ [     183       0       0       0       7       0    1679]]  89.834% 	[class: Krummholz]
+ + average row correct: 74.38308596611% 
+ + average rowUcol correct (VOC measure): 60.064545699528% 
+ + global correct: 74.471830985915%
+<trainer> saving network to /media/aviral/Tea Set/8th Semester/Major-Project/Forest Cover/save-log/model.net	
+<trainer> on testing Set:	
+ [================================ 921/921 ===================================>] ETA: 0ms | Step: 0ms                              
+<trainer> time to test 1 sample = 0.17662001743379ms	
+ConfusionMatrix:
+[[      47      42       1       0      46      36      42]   21.963% 	[class: Spruce/Fir]
+ [      24      19       4       3      14      35      22]   15.702% 	[class: Lodgepole Pine]
+ [       1       0      28       1       0     111       0]   19.858% 	[class: Ponderosa Pine]
+ [       0       0       0       0       0       0       0]   nan% 	[class: Cottonwood/Willow]
+ [       5       6       1       0       7      17       2]   18.421% 	[class: Aspen]
+ [       0       2       7       0       1     105       0]   91.304% 	[class: Douglas-fir]
+ [      87      43       2       0      43      10     106]]  36.426% 	[class: Krummholz]
+ + average row correct: 33.945795645316% 
+ + average rowUcol correct (VOC measure): 18.009246637424% 
+ + global correct: 33.913043478261%
+0	
+<trainer> on training set:	
+<trainer> online epoch # 14 [batchSize = 1]	
+ [================================ 14200/14200 ===============================>] ETA: 0ms | Step: 0ms                              
+<trainer> time to learn 1 sample = 0.46118141899646ms	
+ConfusionMatrix:
+[[    1297     381       1       0      71       9     187]   66.650% 	[class: Spruce/Fir]
+ [     364    1162      29       0     394      69      21]   56.989% 	[class: Lodgepole Pine]
+ [       0       2    1313     241      74     389       0]   65.032% 	[class: Ponderosa Pine]
+ [       0       0     100    1992       0      68       0]   92.222% 	[class: Cottonwood/Willow]
+ [       1     191      49       0    1812      69       0]   85.391% 	[class: Aspen]
+ [       0      13     543     118      43    1328       0]   64.939% 	[class: Douglas-fir]
+ [     180       0       0       0       7       0    1682]]  89.995% 	[class: Krummholz]
+ + average row correct: 74.459620032992% 
+ + average rowUcol correct (VOC measure): 60.178799288613% 
+ + global correct: 74.549295774648%
+<trainer> saving network to /media/aviral/Tea Set/8th Semester/Major-Project/Forest Cover/save-log/model.net	
+<trainer> on testing Set:	
+ [================================ 921/921 ===================================>] ETA: 0ms | Step: 0ms                              
+<trainer> time to test 1 sample = 0.24460788399596ms	
+ConfusionMatrix:
+[[      50      44       1       0      43      37      39]   23.364% 	[class: Spruce/Fir]
+ [      25      19       4       1      14      37      21]   15.702% 	[class: Lodgepole Pine]
+ [       1       0      25       0       0     115       0]   17.730% 	[class: Ponderosa Pine]
+ [       0       0       0       0       0       0       0]   nan% 	[class: Cottonwood/Willow]
+ [       5       6       1       0       7      17       2]   18.421% 	[class: Aspen]
+ [       0       2       7       0       1     105       0]   91.304% 	[class: Douglas-fir]
+ [      91      46       2       0      43      10      99]]  34.021% 	[class: Krummholz]
+ + average row correct: 33.42391376694% 
+ + average rowUcol correct (VOC measure): 17.397624005874% 
+ + global correct: 33.152173913043%
+0	
+<trainer> on training set:	
+<trainer> online epoch # 15 [batchSize = 1]	
+ [================================ 14200/14200 ===============================>] ETA: 0ms | Step: 0ms                              
+<trainer> time to learn 1 sample = 0.58720689424327ms	
+ConfusionMatrix:
+[[    1295     385       1       0      67       9     189]   66.547% 	[class: Spruce/Fir]
+ [     362    1165      29       0     395      67      21]   57.136% 	[class: Lodgepole Pine]
+ [       0       2    1323     228      70     396       0]   65.527% 	[class: Ponderosa Pine]
+ [       0       0      97    1998       0      65       0]   92.500% 	[class: Cottonwood/Willow]
+ [       1     180      49       0    1824      68       0]   85.957% 	[class: Aspen]
+ [       0      12     546     115      40    1332       0]   65.134% 	[class: Douglas-fir]
+ [     177       0       0       0       7       0    1685]]  90.155% 	[class: Krummholz]
+ + average row correct: 74.708053895405% 
+ + average rowUcol correct (VOC measure): 60.503695692335% 
+ + global correct: 74.802816901408%
+<trainer> saving network to /media/aviral/Tea Set/8th Semester/Major-Project/Forest Cover/save-log/model.net	
+<trainer> on testing Set:	
+ [================================ 921/921 ===================================>] ETA: 0ms | Step: 0ms                              
+<trainer> time to test 1 sample = 0.17953436744847ms	
+ConfusionMatrix:
+[[      53      44       1       0      43      37      36]   24.766% 	[class: Spruce/Fir]
+ [      27      19       4       1      14      37      19]   15.702% 	[class: Lodgepole Pine]
+ [       1       0      23       0       0     117       0]   16.312% 	[class: Ponderosa Pine]
+ [       0       0       0       0       0       0       0]   nan% 	[class: Cottonwood/Willow]
+ [       6       5       1       0       7      17       2]   18.421% 	[class: Aspen]
+ [       0       2       7       0       1     105       0]   91.304% 	[class: Douglas-fir]
+ [      99      46       2       0      42      10      92]]  31.615% 	[class: Krummholz]
+ + average row correct: 33.02023584644% 
+ + average rowUcol correct (VOC measure): 16.962289623916% 
+ + global correct: 32.5%
+0	
+<trainer> on training set:	
+<trainer> online epoch # 16 [batchSize = 1]	
+ [================================ 14200/14200 ===============================>] ETA: 0ms | Step: 0ms                              
+<trainer> time to learn 1 sample = 0.57253577339817ms	
+ConfusionMatrix:
+[[    1295     387       2       0      64       9     189]   66.547% 	[class: Spruce/Fir]
+ [     363    1168      29       0     392      67      20]   57.283% 	[class: Lodgepole Pine]
+ [       0       2    1320     216      71     410       0]   65.379% 	[class: Ponderosa Pine]
+ [       0       0      97    2004       0      59       0]   92.778% 	[class: Cottonwood/Willow]
+ [       1     176      51       0    1829      65       0]   86.192% 	[class: Aspen]
+ [       0      13     538     116      40    1338       0]   65.428% 	[class: Douglas-fir]
+ [     171       0       0       0       7       0    1691]]  90.476% 	[class: Krummholz]
+ + average row correct: 74.868966000421% 
+ + average rowUcol correct (VOC measure): 60.729136211531% 
+ + global correct: 74.964788732394%
+<trainer> saving network to /media/aviral/Tea Set/8th Semester/Major-Project/Forest Cover/save-log/model.net	
+<trainer> on testing Set:	
+ [================================ 921/921 ===================================>] ETA: 0ms | Step: 0ms                              
+<trainer> time to test 1 sample = 0.27917909570419ms	
+ConfusionMatrix:
+[[      56      45       1       0      43      37      32]   26.168% 	[class: Spruce/Fir]
+ [      28      19       4       0      14      38      18]   15.702% 	[class: Lodgepole Pine]
+ [       1       0      22       0       0     118       0]   15.603% 	[class: Ponderosa Pine]
+ [       0       0       0       0       0       0       0]   nan% 	[class: Cottonwood/Willow]
+ [       7       5       1       0       7      17       1]   18.421% 	[class: Aspen]
+ [       0       2       6       0       1     106       0]   92.174% 	[class: Douglas-fir]
+ [     105      48       2       0      42      10      84]]  28.866% 	[class: Krummholz]
+ + average row correct: 32.822413742542% 
+ + average rowUcol correct (VOC measure): 16.64018984884% 
+ + global correct: 31.95652173913%
+0	
+<trainer> on training set:	
+<trainer> online epoch # 17 [batchSize = 1]	
+ [================================ 14200/14200 ===============================>] ETA: 0ms | Step: 0ms                              
+<trainer> time to learn 1 sample = 0.56345266355595ms	
+ConfusionMatrix:
+[[    1300     385       2       0      64       9     186]   66.804% 	[class: Spruce/Fir]
+ [     367    1165      29       0     391      66      21]   57.136% 	[class: Lodgepole Pine]
+ [       0       2    1324     209      72     412       0]   65.577% 	[class: Ponderosa Pine]
+ [       0       0      95    2012       0      53       0]   93.148% 	[class: Cottonwood/Willow]
+ [       1     170      50       0    1836      65       0]   86.522% 	[class: Aspen]
+ [       0      15     532     114      36    1348       0]   65.917% 	[class: Douglas-fir]
+ [     164       0       0       0       7       0    1698]]  90.851% 	[class: Krummholz]
+ + average row correct: 75.136351585388% 
+ + average rowUcol correct (VOC measure): 61.075003658022% 
+ + global correct: 75.232394366197%
+<trainer> saving network to /media/aviral/Tea Set/8th Semester/Major-Project/Forest Cover/save-log/model.net	
+<trainer> on testing Set:	
+ [================================ 921/921 ===================================>] ETA: 0ms | Step: 0ms                              
+<trainer> time to test 1 sample = 0.24413027023001ms	
+ConfusionMatrix:
+[[      55      46       1       0      43      37      32]   25.701% 	[class: Spruce/Fir]
+ [      28      19       4       0      14      38      18]   15.702% 	[class: Lodgepole Pine]
+ [       1       0      21       0       0     119       0]   14.894% 	[class: Ponderosa Pine]
+ [       0       0       0       0       0       0       0]   nan% 	[class: Cottonwood/Willow]
+ [       7       5       1       0       7      17       1]   18.421% 	[class: Aspen]
+ [       0       2       6       0       1     106       0]   92.174% 	[class: Douglas-fir]
+ [     108      50       2       0      42      10      79]]  27.148% 	[class: Krummholz]
+ + average row correct: 32.339960336685% 
+ + average rowUcol correct (VOC measure): 16.185525866846% 
+ + global correct: 31.195652173913%
+0	
+<trainer> on training set:	
+<trainer> online epoch # 18 [batchSize = 1]	
+ [================================ 14200/14200 ===============================>] ETA: 0ms | Step: 0ms                              
+<trainer> time to learn 1 sample = 0.58138360439892ms	
+ConfusionMatrix:
+[[    1303     383       2       0      65      10     183]   66.958% 	[class: Spruce/Fir]
+ [     368    1165      32       0     385      68      21]   57.136% 	[class: Lodgepole Pine]
+ [       0       2    1324     200      71     422       0]   65.577% 	[class: Ponderosa Pine]
+ [       0       0      97    2014       0      49       0]   93.241% 	[class: Cottonwood/Willow]
+ [       1     169      50       0    1840      62       0]   86.711% 	[class: Aspen]
+ [       0      16     521     112      35    1361       0]   66.553% 	[class: Douglas-fir]
+ [     163       0       0       0       7       0    1699]]  90.904% 	[class: Krummholz]
+ + average row correct: 75.296986954553% 
+ + average rowUcol correct (VOC measure): 61.299539889608% 
+ + global correct: 75.394366197183%
+<trainer> saving network to /media/aviral/Tea Set/8th Semester/Major-Project/Forest Cover/save-log/model.net	
+<trainer> on testing Set:	
+ [================================ 921/921 ===================================>] ETA: 0ms | Step: 0ms                              
+<trainer> time to test 1 sample = 0.22544741759989ms	
+ConfusionMatrix:
+[[      56      48       1       0      41      37      31]   26.168% 	[class: Spruce/Fir]
+ [      28      19       4       0      14      38      18]   15.702% 	[class: Lodgepole Pine]
+ [       1       0      18       0       0     122       0]   12.766% 	[class: Ponderosa Pine]
+ [       0       0       0       0       0       0       0]   nan% 	[class: Cottonwood/Willow]
+ [       7       5       0       0       7      18       1]   18.421% 	[class: Aspen]
+ [       0       2       4       0       1     108       0]   93.913% 	[class: Douglas-fir]
+ [     111      51       2       0      41      10      76]]  26.117% 	[class: Krummholz]
+ + average row correct: 32.181265950203% 
+ + average rowUcol correct (VOC measure): 15.826982694368% 
+ + global correct: 30.869565217391%
+0	
+<trainer> on training set:	
+<trainer> online epoch # 19 [batchSize = 1]	
+^C/usr/local/bin/luajit: /usr/local/share/lua/5.1/nn/Sequential.lua:36: interrupted!: 4s192ms | Step: 0ms                          
+stack traceback:
+	/usr/local/share/lua/5.1/nn/Sequential.lua:36: in function 'updateGradInput'
+	/usr/local/share/lua/5.1/nn/Module.lua:30: in function 'backward'
+	predictingForestCover.lua:255: in function 'opfunc'
+	/usr/local/share/lua/5.1/optim/sgd.lua:43: in function 'sgd'
+	predictingForestCover.lua:286: in function 'train'
+	predictingForestCover.lua:393: in main chunk
+	[C]: in function 'dofile'
+	/usr/local/lib/luarocks/rocks/trepl/scm-1/bin/th:131: in main chunk
+	[C]: at 0x0804d650
+aviral@aviral-Inspiron-N5110:/media/aviral/Tea Set/8th Semester/Major-Project/Forest Cover$ 
+

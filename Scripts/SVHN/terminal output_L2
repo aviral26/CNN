@@ -1,0 +1,192 @@
+aviral@aviral-Inspiron-N5110:~$ cd /media/aviral/Tea\ Set/8th\ Semester/Major-Project/SVHN/
+aviral@aviral-Inspiron-N5110:/media/aviral/Tea Set/8th Semester/Major-Project/SVHN$ th learning_svhn.lua
+<torch> set nb of threads to 2	
+<trainer> using model:	
+nn.Sequential {
+  [input -> (1) -> (2) -> (3) -> (4) -> (5) -> (6) -> (7) -> (8) -> (9) -> (10) -> (11) -> (12) -> (13) -> output]
+  (1): nn.SpatialConvolutionMap
+  (2): nn.Tanh
+  (3): nn.Sequential {
+    [input -> (1) -> (2) -> (3) -> output]
+    (1): nn.Square
+    (2): nn.SpatialSubSampling
+    (3): nn.Sqrt
+  }
+  (4): nn.SpatialSubtractiveNormalization
+  (5): nn.SpatialConvolutionMap
+  (6): nn.Tanh
+  (7): nn.Sequential {
+    [input -> (1) -> (2) -> (3) -> output]
+    (1): nn.Square
+    (2): nn.SpatialSubSampling
+    (3): nn.Sqrt
+  }
+  (8): nn.SpatialSubtractiveNormalization
+  (9): nn.Reshape
+  (10): nn.Linear
+  (11): nn.Tanh
+  (12): nn.Linear
+  (13): nn.LogSoftMax
+}
+<trainer> using reduced train set	
+(use -extra to use complete training set, with extra samples)	
+<trainer> preprocessing data (color space + normalization)	
+<trainer> on training set:	
+<trainer> online epoch # 1 [batchSize = 1]	
+ [================================ 73257/73257 ===============================>] ETA: 0ms | Step: 33ms                             
+<trainer> time to learn 1 sample = 29.218373532387ms	
+ConfusionMatrix:
+[[   12639     176     165     309      61      63     226      42      20     160]   91.184% 	[class: 1]
+ [     361    9350     137     195      61      27     209      54     156      35]   88.333% 	[class: 2]
+ [     424     232    6542     184     525     175      80     191     111      33]   76.992% 	[class: 3]
+ [     560     268     167    6083      75      63      69      41      95      37]   81.563% 	[class: 4]
+ [     193     106     497      86    5589     278      25      41      52      15]   81.212% 	[class: 5]
+ [     252      80     232     107     348    4306      39     183      37     143]   75.188% 	[class: 6]
+ [     502     303     106      50      60      27    4482      19      12      34]   80.107% 	[class: 7]
+ [     278     167     369     100     138     289      35    3439     119     111]   68.167% 	[class: 8]
+ [     185     321     173     134     137      35      28      80    3404     162]   73.063% 	[class: 9]
+ [     375     119      63      68      33     139      29      36     116    3970]]  80.234% 	[class: 0]
+ + average row correct: 79.60423707962% 
+ + average rowUcol correct (VOC measure): 67.716910839081% 
+ + global correct: 81.63588462536%
+<trainer> saving network to /media/aviral/Tea Set/8th Semester/Major-Project/SVHN/learning_svhn/house.net	
+<trainer> on testing Set:	
+ [================================ 26032/26032 ===============================>] ETA: 0ms | Step: 8ms                              
+<trainer> time to test 1 sample = 9.4529235645094ms	
+ConfusionMatrix:
+[[    4630      38      91     105      39      12      65      15      15      89]   90.802% 	[class: 1]
+ [      45    3705     146      69      43      15      18      38      51      19]   89.299% 	[class: 2]
+ [      36      49    2362      31     172      43       6      57     114      12]   81.957% 	[class: 3]
+ [     110      33     146    2067      47      22      10      16      52      20]   81.926% 	[class: 4]
+ [      19      29      95      17    2114      71       2       5      26       6]   88.674% 	[class: 5]
+ [      41      15      75      30     151    1560       4      21      23      57]   78.907% 	[class: 6]
+ [     165      85      60      14      22       9    1634       8      11      11]   80.931% 	[class: 7]
+ [      17      29     138      15      64     134       0    1151      78      34]   69.337% 	[class: 8]
+ [      18      78      37      11      41      15       4      14    1319      58]   82.696% 	[class: 9]
+ [      33      15       9      12      13      75       3       1      57    1526]]  87.500% 	[class: 0]
+ + average row correct: 83.203036189079% 
+ + average rowUcol correct (VOC measure): 71.806635856628% 
+ + global correct: 84.772587584511%
+<trainer> on training set:	
+<trainer> online epoch # 2 [batchSize = 1]	
+ [================================ 73257/73257 ===============================>] ETA: 0ms | Step: 22ms                             
+<trainer> time to learn 1 sample = 30.546025197385ms	
+ConfusionMatrix:
+[[   12901     120     140     267      32      57     189      41      21      93]   93.074% 	[class: 1]
+ [     131    9748     120     129      41      31     168      52     127      38]   92.093% 	[class: 2]
+ [     157     163    7319     109     316     113      70     142      77      31]   86.136% 	[class: 3]
+ [     329     118      98    6619      57      53      39      42      77      26]   88.750% 	[class: 4]
+ [      73      55     310      79    6066     189      20      35      45      10]   88.143% 	[class: 5]
+ [      89      37     117      92     220    4823      34     166      35     114]   84.215% 	[class: 6]
+ [     274     174      81      51      28      18    4916      21      10      22]   87.864% 	[class: 7]
+ [     107      81     249      73      67     202      31    4086      86      63]   80.991% 	[class: 8]
+ [      68     161      87      72     107      27      30      82    3913     112]   83.988% 	[class: 9]
+ [     145      45      36      38       6     104      24      31     104    4415]]  89.228% 	[class: 0]
+ + average row correct: 87.44825899601% 
+ + average rowUcol correct (VOC measure): 78.27030479908% 
+ + global correct: 88.463901060649%
+<trainer> saving network to /media/aviral/Tea Set/8th Semester/Major-Project/SVHN/learning_svhn/house.net	
+<trainer> on testing Set:	
+ [================================ 26032/26032 ===============================>] ETA: 0ms | Step: 24ms                             
+<trainer> time to test 1 sample = 9.5140399490314ms	
+ConfusionMatrix:
+[[    4746      25      28     118      13      14      65      15       3      72]   93.077% 	[class: 1]
+ [      54    3750      52      96      31      10      64      29      45      18]   90.383% 	[class: 2]
+ [      53      59    2266      59      97      46      15     178      91      18]   78.626% 	[class: 3]
+ [     123      21      24    2249      15      13      24      10      24      20]   89.140% 	[class: 4]
+ [      22      20      85      26    2073      83      11      20      34      10]   86.955% 	[class: 5]
+ [      37       8      48      37      66    1652      14      45      14      56]   83.561% 	[class: 6]
+ [     156      26      15      18       8       5    1769       5      11       6]   87.618% 	[class: 7]
+ [      21      18      54      26      31      70       5    1362      42      31]   82.048% 	[class: 8]
+ [      25      60      17      21      12      13      16      24    1346      61]   84.389% 	[class: 9]
+ [      24      16      10      10       6      63       8       8      54    1545]]  88.589% 	[class: 0]
+ + average row correct: 86.438580751419% 
+ + average rowUcol correct (VOC measure): 76.020849943161% 
+ + global correct: 87.423171481254%
+<trainer> on training set:	
+<trainer> online epoch # 3 [batchSize = 1]	
+ [================================ 73257/73257 ===============================>] ETA: 0ms | Step: 22ms                             
+<trainer> time to learn 1 sample = 29.529057154809ms	
+ConfusionMatrix:
+[[   13053     104     119     236      33      44     142      25      20      85]   94.171% 	[class: 1]
+ [     132    9904      95      96      41      23     132      38      98      26]   93.566% 	[class: 2]
+ [     148     128    7525      85     252      81      50     138      61      29]   88.561% 	[class: 3]
+ [     285     104      63    6769      45      43      32      43      50      24]   90.762% 	[class: 4]
+ [      54      37     285      67    6173     156      14      42      46       8]   89.698% 	[class: 5]
+ [      77      37      94      70     165    4994      28     142      32      88]   87.201% 	[class: 6]
+ [     229     140      72      34      18      17    5039      13      11      22]   90.063% 	[class: 7]
+ [      75      79     189      66      54     157      21    4272      77      55]   84.678% 	[class: 8]
+ [      56     129      73      70      80      20      21      54    4069      87]   87.336% 	[class: 9]
+ [     114      42      26      26       8      78      24      33      71    4526]]  91.471% 	[class: 0]
+ + average row correct: 89.750616550446% 
+ + average rowUcol correct (VOC measure): 81.902516484261% 
+ + global correct: 90.536057987633%
+<trainer> saving network to /media/aviral/Tea Set/8th Semester/Major-Project/SVHN/learning_svhn/house.net	
+<trainer> on testing Set:	
+ [================================ 26032/26032 ===============================>] ETA: 0ms | Step: 8ms                              
+<trainer> time to test 1 sample = 9.2754903184759ms	
+ConfusionMatrix:
+[[    4746      35      45      77      15      22      77       5       6      71]   93.077% 	[class: 1]
+ [      46    3770      75      55      38      20      79       7      44      15]   90.865% 	[class: 2]
+ [      57      55    2411      29      99      43      22      60      93      13]   83.657% 	[class: 3]
+ [     130      29      40    2191      23      22      29       4      28      27]   86.841% 	[class: 4]
+ [      17      18      72      21    2131      81       9       5      22       8]   89.388% 	[class: 5]
+ [      24       7      39      32      85    1705       8      20      12      45]   86.242% 	[class: 6]
+ [      96      29      17       9      12       8    1832       1       7       8]   90.738% 	[class: 7]
+ [      18      19      75      26      26     155       9    1247      56      29]   75.120% 	[class: 8]
+ [      17      45      17      14      13      14      21       9    1384      61]   86.771% 	[class: 9]
+ [      19      11       9       5       4      60      12       5      20    1599]]  91.686% 	[class: 0]
+ + average row correct: 87.438536286354% 
+ + average rowUcol correct (VOC measure): 77.682818770409% 
+ + global correct: 88.414259373079%
+<trainer> on training set:	
+<trainer> online epoch # 4 [batchSize = 1]	
+ [================================ 73257/73257 ===============================>] ETA: 0ms | Step: 24ms                             
+<trainer> time to learn 1 sample = 69.036200104568ms	
+ConfusionMatrix:
+[[   13158      86      96     197      35      44     137      25      20      63]   94.928% 	[class: 1]
+ [     103    9999      83      84      35      24     107      40      80      30]   94.464% 	[class: 2]
+ [     121     125    7674      65     222      58      52      97      62      21]   90.314% 	[class: 3]
+ [     232      92      63    6877      31      33      30      25      50      25]   92.210% 	[class: 4]
+ [      54      36     231      62    6282     129      13      27      42       6]   91.282% 	[class: 5]
+ [      59      26      86      55     150    5082      17     148      22      82]   88.738% 	[class: 6]
+ [     182     116      57      33      20      14    5125      16      11      21]   91.600% 	[class: 7]
+ [      66      68     147      49      44     152      15    4401      68      35]   87.235% 	[class: 8]
+ [      61     103      62      49      64      13      25      47    4168      67]   89.461% 	[class: 9]
+ [      90      31      27      23       6      59      24      31      68    4589]]  92.745% 	[class: 0]
+ + average row correct: 91.297550201416% 
+ + average rowUcol correct (VOC measure): 84.371314644814% 
+ + global correct: 91.943432026974%
+<trainer> saving network to /media/aviral/Tea Set/8th Semester/Major-Project/SVHN/learning_svhn/house.net	
+<trainer> on testing Set:	
+ [================================ 26032/26032 ===============================>] ETA: 0ms | Step: 11ms                             
+<trainer> time to test 1 sample = 9.4703598281102ms	
+ConfusionMatrix:
+[[    4782      20      38     114      11      19      51      13       3      48]   93.783% 	[class: 1]
+ [      41    3855      54      51      31      27      38      21      21      10]   92.914% 	[class: 2]
+ [      60      67    2355      36     109      59       9     102      76       9]   81.714% 	[class: 3]
+ [      92      23      40    2256      27      30      17       8      15      15]   89.417% 	[class: 4]
+ [      14      23      55      14    2098     145       5      10      15       5]   88.003% 	[class: 5]
+ [      21       8      27      16      37    1790       6      35       5      32]   90.541% 	[class: 6]
+ [     125      27      19      10      14      14    1793       2       8       7]   88.806% 	[class: 7]
+ [      17      17      37      23      28     132       4    1352      26      24]   81.446% 	[class: 8]
+ [      27      74      14      13      17      20      12      17    1330      71]   83.386% 	[class: 9]
+ [      27      18      12       4       8      86       9       5       9    1566]]  89.794% 	[class: 0]
+ + average row correct: 87.980436086655% 
+ + average rowUcol correct (VOC measure): 78.779903054237% 
+ + global correct: 89.032728948986%
+<trainer> on training set:	
+<trainer> online epoch # 5 [batchSize = 1]	
+^C/usr/local/bin/luajit: /usr/local/share/lua/5.1/nn/Sequential.lua:52: interrupted!: 36m38s | Step: 30ms                          
+stack traceback:
+	/usr/local/share/lua/5.1/nn/Sequential.lua:52: in function 'accGradParameters'
+	/usr/local/share/lua/5.1/nn/Module.lua:31: in function 'backward'
+	learning_svhn.lua:227: in function 'opfunc'
+	/usr/local/share/lua/5.1/optim/sgd.lua:43: in function 'sgd'
+	learning_svhn.lua:254: in function 'train'
+	learning_svhn.lua:320: in main chunk
+	[C]: in function 'dofile'
+	/usr/local/lib/luarocks/rocks/trepl/scm-1/bin/th:131: in main chunk
+	[C]: at 0x0804d650
+aviral@aviral-Inspiron-N5110:/media/aviral/Tea Set/8th Semester/Major-Project/SVHN$ 
+

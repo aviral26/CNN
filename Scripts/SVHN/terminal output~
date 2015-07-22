@@ -1,0 +1,170 @@
+aviral@aviral-Inspiron-N5110:~$ cd /media/aviral/Tea\ Set/8th\ Semester/Major-Project/SVHN/
+aviral@aviral-Inspiron-N5110:/media/aviral/Tea Set/8th Semester/Major-Project/SVHN$ ls
+learning_mnist       learning_svhn.lua  Set            train_32x32.t7
+learning_mnist.lua~  Semester           test_32x32.t7
+aviral@aviral-Inspiron-N5110:/media/aviral/Tea Set/8th Semester/Major-Project/SVHN$ 
+aviral@aviral-Inspiron-N5110:/media/aviral/Tea Set/8th Semester/Major-Project/SVHN$ th learning_svhn.lua 
+<torch> set nb of threads to 2	
+<trainer> using model:	
+nn.Sequential {
+  [input -> (1) -> (2) -> (3) -> (4) -> (5) -> (6) -> (7) -> (8) -> (9) -> (10) -> (11) -> (12) -> (13) -> output]
+  (1): nn.SpatialConvolutionMap
+  (2): nn.Tanh
+  (3): nn.Sequential {
+    [input -> (1) -> (2) -> (3) -> output]
+    (1): nn.Square
+    (2): nn.SpatialSubSampling
+    (3): nn.Sqrt
+  }
+  (4): nn.SpatialSubtractiveNormalization
+  (5): nn.SpatialConvolutionMap
+  (6): nn.Tanh
+  (7): nn.Sequential {
+    [input -> (1) -> (2) -> (3) -> output]
+    (1): nn.Square
+    (2): nn.SpatialSubSampling
+    (3): nn.Sqrt
+  }
+  (8): nn.SpatialSubtractiveNormalization
+  (9): nn.Reshape
+  (10): nn.Linear
+  (11): nn.Tanh
+  (12): nn.Linear
+  (13): nn.LogSoftMax
+}
+<trainer> WARNING: using reduced train set	
+(use -extra to use complete training set, with extra samples)	
+<trainer> preprocessing data (color space + normalization)	
+<trainer> on training set:	
+<trainer> online epoch # 1 [batchSize = 1]	
+^C/usr/local/bin/luajit: /usr/local/share/lua/5.1/optim/sgd.lua:85: interrupted! ETA: 29m13s | Step: 24ms                          
+stack traceback:
+	/usr/local/share/lua/5.1/optim/sgd.lua:85: in function 'sgd'
+	learning_svhn.lua:281: in function 'train'
+	learning_svhn.lua:361: in main chunk
+	[C]: in function 'dofile'
+	/usr/local/lib/luarocks/rocks/trepl/scm-1/bin/th:131: in main chunk
+	[C]: at 0x0804d650
+aviral@aviral-Inspiron-N5110:/media/aviral/Tea Set/8th Semester/Major-Project/SVHN$ cd ..
+aviral@aviral-Inspiron-N5110:/media/aviral/Tea Set/8th Semester/Major-Project$ ls
+Autoencoder  dp script      Face Detector (data unavailable)  Forest Cover              neuralnetwork_tutorial.lua~  SVHN
+CIFAR10      Face Detector  face_detector.lua~                Nation Data Science Bowl  Screenshot.jpg               svhn.jpg
+aviral@aviral-Inspiron-N5110:/media/aviral/Tea Set/8th Semester/Major-Project$ cd CIFAR10/
+aviral@aviral-Inspiron-N5110:/media/aviral/Tea Set/8th Semester/Major-Project/CIFAR10$ ls
+cifar-10-batches-t7  cifar-10-torch.tar.gz  cifar.net  learning_CIFAR10  learning_CIFAR10.lua  learning_CIFAR10.lua~  Semester  Set
+aviral@aviral-Inspiron-N5110:/media/aviral/Tea Set/8th Semester/Major-Project/CIFAR10$ th learning_CIFAR10.lua
+<torch> set nb of threads to 2	
+<cifar> using model:	
+nn.Sequential {
+  [input -> (1) -> (2) -> (3) -> (4) -> (5) -> (6) -> (7) -> (8) -> (9) -> (10) -> output]
+  (1): nn.SpatialConvolutionMap
+  (2): nn.Tanh
+  (3): nn.SpatialMaxPooling
+  (4): nn.SpatialConvolutionMap
+  (5): nn.Tanh
+  (6): nn.SpatialMaxPooling
+  (7): nn.Reshape
+  (8): nn.Linear
+  (9): nn.Tanh
+  (10): nn.Linear
+}
+/usr/local/bin/luajit: learning_CIFAR10.lua:181: $ Torch: not enough memory: you tried to allocate 1GB. Buy new RAM!
+stack traceback:
+	[C]: in function 'reshape'
+	learning_CIFAR10.lua:181: in main chunk
+	[C]: in function 'dofile'
+	/usr/local/lib/luarocks/rocks/trepl/scm-1/bin/th:131: in main chunk
+	[C]: at 0x0804d650
+aviral@aviral-Inspiron-N5110:/media/aviral/Tea Set/8th Semester/Major-Project/CIFAR10$ cd ..
+aviral@aviral-Inspiron-N5110:/media/aviral/Tea Set/8th Semester/Major-Project$ cd SVHN/
+aviral@aviral-Inspiron-N5110:/media/aviral/Tea Set/8th Semester/Major-Project/SVHN$ ls
+learning_mnist  learning_mnist.lua~  learning_svhn  learning_svhn.lua  Semester  Set  test_32x32.t7  train_32x32.t7
+aviral@aviral-Inspiron-N5110:/media/aviral/Tea Set/8th Semester/Major-Project/SVHN$ 
+aviral@aviral-Inspiron-N5110:/media/aviral/Tea Set/8th Semester/Major-Project/SVHN$ ls
+learning_mnist  learning_mnist.lua~  learning_svhn  learning_svhn.lua  Semester  Set  test_32x32.t7  train_32x32.t7
+aviral@aviral-Inspiron-N5110:/media/aviral/Tea Set/8th Semester/Major-Project/SVHN$ th learning_svhn.lua 
+<torch> set nb of threads to 2	
+<trainer> using model:	
+nn.Sequential {
+  [input -> (1) -> (2) -> (3) -> (4) -> (5) -> (6) -> (7) -> (8) -> (9) -> (10) -> (11) -> (12) -> (13) -> output]
+  (1): nn.SpatialConvolutionMap
+  (2): nn.Tanh
+  (3): nn.Sequential {
+    [input -> (1) -> (2) -> (3) -> output]
+    (1): nn.Square
+    (2): nn.SpatialSubSampling
+    (3): nn.Sqrt
+  }
+  (4): nn.SpatialSubtractiveNormalization
+  (5): nn.SpatialConvolutionMap
+  (6): nn.Tanh
+  (7): nn.Sequential {
+    [input -> (1) -> (2) -> (3) -> output]
+    (1): nn.Square
+    (2): nn.SpatialSubSampling
+    (3): nn.Sqrt
+  }
+  (8): nn.SpatialSubtractiveNormalization
+  (9): nn.Reshape
+  (10): nn.Linear
+  (11): nn.Tanh
+  (12): nn.Linear
+  (13): nn.LogSoftMax
+}
+<trainer> WARNING: using reduced train set	
+(use -extra to use complete training set, with extra samples)	
+<trainer> preprocessing data (color space + normalization)	
+<trainer> on training set:	
+<trainer> online epoch # 1 [batchSize = 1]	
+ [================================ 73257/73257 ===============================>] ETA: 0ms | Step: 34ms                             
+<trainer> time to learn 1 sample = 34.451764880669ms	
+ConfusionMatrix:
+[[   12639     176     165     309      61      63     226      42      20     160]   91.184% 	[class: 1]
+ [     361    9350     137     195      61      27     209      54     156      35]   88.333% 	[class: 2]
+ [     424     232    6542     184     525     175      80     191     111      33]   76.992% 	[class: 3]
+ [     560     268     167    6083      75      63      69      41      95      37]   81.563% 	[class: 4]
+ [     193     106     497      86    5589     278      25      41      52      15]   81.212% 	[class: 5]
+ [     252      80     232     107     348    4306      39     183      37     143]   75.188% 	[class: 6]
+ [     502     303     106      50      60      27    4482      19      12      34]   80.107% 	[class: 7]
+ [     278     167     369     100     138     289      35    3439     119     111]   68.167% 	[class: 8]
+ [     185     321     173     134     137      35      28      80    3404     162]   73.063% 	[class: 9]
+ [     375     119      63      68      33     139      29      36     116    3970]]  80.234% 	[class: 0]
+ + average row correct: 79.60423707962% 
+ + average rowUcol correct (VOC measure): 67.716910839081% 
+ + global correct: 81.63588462536%
+<trainer> saving network to /media/aviral/Tea Set/8th Semester/Major-Project/SVHN/learning_svhn/house.net	
+<trainer> on testing Set:	
+ [================================ 26032/26032 ===============================>] ETA: 0ms | Step: 8ms                              
+<trainer> time to test 1 sample = 8.4441217382627ms	
+ConfusionMatrix:
+[[    4630      38      91     105      39      12      65      15      15      89]   90.802% 	[class: 1]
+ [      45    3705     146      69      43      15      18      38      51      19]   89.299% 	[class: 2]
+ [      36      49    2362      31     172      43       6      57     114      12]   81.957% 	[class: 3]
+ [     110      33     146    2067      47      22      10      16      52      20]   81.926% 	[class: 4]
+ [      19      29      95      17    2114      71       2       5      26       6]   88.674% 	[class: 5]
+ [      41      15      75      30     151    1560       4      21      23      57]   78.907% 	[class: 6]
+ [     165      85      60      14      22       9    1634       8      11      11]   80.931% 	[class: 7]
+ [      17      29     138      15      64     134       0    1151      78      34]   69.337% 	[class: 8]
+ [      18      78      37      11      41      15       4      14    1319      58]   82.696% 	[class: 9]
+ [      33      15       9      12      13      75       3       1      57    1526]]  87.500% 	[class: 0]
+ + average row correct: 83.203036189079% 
+ + average rowUcol correct (VOC measure): 71.806635856628% 
+ + global correct: 84.772587584511%
+<trainer> on training set:	
+<trainer> online epoch # 2 [batchSize = 1]	
+^C/usr/local/bin/luajit: /usr/local/share/lua/5.1/nn/Replicate.lua:26: interrupted!A: 30m7s | Step: 24ms                           
+stack traceback:
+	/usr/local/share/lua/5.1/nn/Replicate.lua:26: in function 'updateGradInput'
+	/usr/local/share/lua/5.1/nn/Sequential.lua:36: in function 'updateGradInput'
+	...cal/share/lua/5.1/nn/SpatialSubtractiveNormalization.lua:87: in function 'updateGradInput'
+	/usr/local/share/lua/5.1/nn/Sequential.lua:36: in function 'updateGradInput'
+	/usr/local/share/lua/5.1/nn/Module.lua:30: in function 'backward'
+	learning_svhn.lua:251: in function 'opfunc'
+	/usr/local/share/lua/5.1/optim/sgd.lua:43: in function 'sgd'
+	learning_svhn.lua:281: in function 'train'
+	learning_svhn.lua:361: in main chunk
+	[C]: in function 'dofile'
+	/usr/local/lib/luarocks/rocks/trepl/scm-1/bin/th:131: in main chunk
+	[C]: at 0x0804d650
+aviral@aviral-Inspiron-N5110:/media/aviral/Tea Set/8th Semester/Major-Project/SVHN$ 
+
